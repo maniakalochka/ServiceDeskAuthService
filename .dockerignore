@@ -41,6 +41,4 @@ secrets/
 *.key
 
 # Ensure files needed for image are included (если вы ранее добавляли широкие шаблоны)
-!infra/Dockerfile
-!infra/docker-compose.yml
-!infra/entrypoint.sh
+!Dockerfile
