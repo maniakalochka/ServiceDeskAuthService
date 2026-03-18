@@ -1,0 +1,46 @@
+# .dockerignore
+
+# VCS
+.git
+
+# Python caches / bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtualenvs / local env files
+venv/
+.venv/
+env/
+.env
+.env.local
+# Editor /
+IDE
+.idea/
+.vscode/
+*.iml
+
+# Build / packaging artifacts
+build/
+dist/
+*.egg-info/
+
+# Test / typecheck caches
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Secrets / keys
+secrets/
+*.pem
+*.key
+
+# Ensure files needed for image are included (если вы ранее добавляли широкие шаблоны)
+!infra/Dockerfile
+!infra/docker-compose.yml
+!infra/entrypoint.sh
